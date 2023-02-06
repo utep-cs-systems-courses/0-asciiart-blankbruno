@@ -26,3 +26,10 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+
+// Prints an arrow using print_square and print_traingle (yeah this is pretty cheeky)
+void print_arrow(int leftCol, int size)
+{
+  print_triangle(leftCol, size);
+  print_square(leftCol+5, size-2);
+}
